@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/static/css/style.css"> <!-- Link to your CSS file -->
+    <title>Checkout - Men's Jewelry</title>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <a href="/">Back to Shopping</a>
+        </div>
+    </header>
+
+    <section class="checkout">
+        <div class="container">
+            <h1>Checkout</h1>
+            <form action="/process_order" method="post"> <!-- Specify the appropriate action URL -->
+                <div class="form-group">
+                    <label for="name">Full Name</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email Address</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="address">Shipping Address</label>
+                    <textarea id="address" name="address" rows="4" required></textarea>
+                </div>
+                <div class="form-group">
+                    <label for="payment">Payment Method</label>
+                    <select id="payment" name="payment" required>
+                        <option value="credit_card">Credit Card</option>
+                        <option value="paypal">PayPal</option>
+                    </select>
+                </div>
+                <button class="submit-button" type="submit">Place Order</button>
+            </form>
+        </div>
+    </section>
+    
+    <footer>
+        <div class="container">
+            <p>&copy; 2023 Men's Jewelry</p>
+            <p><a href="#">Privacy Policy</a> | <a href="#">Terms and Conditions</a></p>
+        </div>
+    </footer>
+</body>
+</html>

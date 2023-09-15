@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/static/css/style.css"> <!-- Link to your CSS file -->
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap" rel="stylesheet">
+    <title>Men's Jewelry - Home</title>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Discover Premium Men's Jewelry</h1>
+            <p>Elevate Your Style with Our Exquisite Collection</p>
+            <a href="/rings" class="cta-button">Explore Rings</a>
+        </div>
+    </header>
+
+    <section class="product-details">
+        <div class="container">
+            <h2>Featured Products</h2>
+            <!-- Display featured products here -->
+            {% for product in products %}
+            <div class="product">
+                <img src="{{ product.image_url }}" alt="{{ product.name }}">
+                <h3>{{ product.name }}</h3>
+                <p>{{ product.description }}</p>
+                <p>Price: ${{ product.price }}</p>
+                <a href="/product/{{ product.id }}">View Details</a>
+            </div>
+            {% endfor %}
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2023 Men's Jewelry</p>
+            <p><a href="#">Privacy Policy</a> | <a href="#">Terms and Conditions</a></p>
+        </div>
+    </footer>
+</body>
+</html>

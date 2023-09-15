@@ -1,0 +1,183 @@
+/* General Styling */
+body {
+    font-family: Arial, Helvetica, sans-serif; /* Change the font */
+    background-color: #fff; /* White background */
+    color: #000; /* Black text */
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+a {
+    color: #000; /* Black link color */
+    text-decoration: none;
+}
+
+/* Header Styling */
+header {
+    background-color: #000; /* Black header background */
+    color: #fff; /* White header text */
+    padding: 20px 0;
+    text-align: center;
+}
+
+/* Navigation Styling */
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #000; /* Black navigation text */
+}
+
+nav a:hover {
+    text-decoration: underline; /* Underline on hover */
+}
+
+/* Product Styling */
+.product {
+    margin: 10px;
+    padding: 10px;
+    border: 1px solid #000; /* Black border */
+    background-color: #fff; /* White background */
+    text-align: center;
+    transition: transform 0.3s; /* Add hover effect */
+}
+
+.product:hover {
+    transform: scale(1.05); /* Scale up on hover */
+}
+
+.product img {
+    max-width: 100%;
+}
+
+/* Button Styling */
+button {
+    background-color: #000; /* Black button background */
+    color: #fff; /* White button text */
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    font-family: Arial, Helvetica, sans-serif; /* Change the font */
+    transition: background-color 0.3s, color 0.3s; /* Add hover effect */
+}
+
+button:hover {
+    background-color: #fff; /* White background on hover */
+    color: #000; /* Black text on hover */
+}
+
+/* Footer Styling */
+footer {
+    background-color: #000; /* Black footer background */
+    color: #fff; /* White footer text */
+    text-align: center;
+    padding: 10px 0;
+}
+/* Reset any default font styles */
+body, h1, h2, h3, p {
+    font-family: "Roboto", sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* Customize header and other elements as needed */
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+    font-size: 24px;
+}
+
+/* Add styles for other elements as needed */
+/* For example, customize navigation links */
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+    font-size: 16px;
+}
+
+/* Update other styles as per your design */
+/* Define a CSS class for square images */
+.square-image {
+    width: 20%; /* Set the width to 100% to make the image responsive */
+    object-fit: cover; /* Maintain aspect ratio and cover the entire container */
+}
+/* CSS for the product grid */
+.product-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+/* CSS for individual product boxes */
+.product {
+    width: 48%; /* Adjust as needed for spacing */
+    margin-bottom: 20px;
+    display: flex;
+    background-color: #fff;
+    border: 1px solid #e0e0e0;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* CSS for product images */
+.product-image {
+    flex: 1;
+    padding: 10px;
+}
+
+.product-image img {
+    width: 100%;
+    height: auto;
+}
+
+/* CSS for product information */
+.product-info {
+    flex: 1;
+    padding: 10px;
+}
+
+.product-info h3 {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.product-info p {
+    font-size: 14px;
+    color: #666;
+}
+
+.product-info a {
+    display: inline-block;
+    background-color: #007bff;
+    color: #fff;
+    padding: 8px 16px;
+    text-decoration: none;
+    border-radius: 4px;
+    margin-top: 10px;
+    font-size: 14px;
+}
+    
